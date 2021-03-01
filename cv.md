@@ -4,7 +4,7 @@
 3. I worked more than 20 years as a DTP specialist. Now it's time to change my professional field.  
 4. I have some experience in HTML and CSS and a bit in JS.  
 5. Only some lines (to see how it looks in markdown):  
-        <function warnTheSheep(queue) {  
+        `function warnTheSheep(queue) {  
           for(i = queue.length - 1; i > - 1; i--){  
             if (queue[i] == 'sheep' && queue[i - 1] == 'wolf'){   
               console.log (queue[i - 1]);  
@@ -16,7 +16,7 @@
               return ("Pls go away and stop eating my sheep");  
               }  
           }  
-        }>  
+        }`  
 7. Only Rsschool and HTML Academy projects.  
 8. Rsschool, Free Code Camp and HTML Academy.     
 9. I reckon my reading and listening abilities are good. Fluency is not my cup of tea.  
