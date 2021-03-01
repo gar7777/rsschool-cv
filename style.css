@@ -1,22 +1,78 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
 :root {
-    --font-heading: 'Oswald', sans-serif;
-    --font-body: 'Titillium Web', sans-serif;
+    --font-heading: 'Oswald', Verdana, sans-serif;
+    --font-body: 'Titillium Web', Arial, sans-serif;
     --main-color: #290063;
     --secondary-color: #303030;
     --light-color: #808080;
+    --white-color: white;
+    --hover-color: #fa7f05;
+    }
+
+
+.header{
+    background-color: var(--light-color);
+    margin-bottom: 20px;
 }
 
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+    padding: 15px 0;
+}
+
+.nav-item {
+    color: var(--white-color);
+    list-style: none;
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding-left: 15px;
+    text-align: right;
+}
+
+.nav-item:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+}
 
 h1 {
     font-family: var(--font-heading);
     color: var(--main-color);
     font-size: 3rem;
-    text-align: left;
+    text-align: right;
 }
 
 .main-photo {
     border-radius: 50%;
     box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    width: 24%;
+    height: 24%;
 }
 
 blockquote {
@@ -31,13 +87,14 @@ blockquote {
 .wrapper {
     width: 60%;
     margin: 0 auto;
-    
+
 }
 
 .list {
     font-family: var(--font-body);
     font-size: 1.2rem;
     color: var(--secondary-color);
+    padding-bottom: 5px;
 }
 
 ol :first-child {
@@ -48,4 +105,36 @@ ol :first-child {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+}
+
+.simple-link {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 40px;
+    background-color: var(--main-color);
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-icon {
+    padding-left: 15px;
+}
+
+.footer-icon :hover {
+    outline: 1px solid var(--white-color);
+}
+
+.footer-text {
+    color: var(--white-color);
+    font-family: var(--font-heading);
+    font-style: 0.8rem;
 }
