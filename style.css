@@ -1,0 +1,51 @@
+:root {
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Titillium Web', sans-serif;
+    --main-color: #290063;
+    --secondary-color: #303030;
+    --light-color: #808080;
+}
+
+
+h1 {
+    font-family: var(--font-heading);
+    color: var(--main-color);
+    font-size: 3rem;
+    text-align: left;
+}
+
+.main-photo {
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+blockquote {
+    font-family: var(--font-heading);
+    color: var(--light-color);
+    font-size: 1.5rem;
+    margin-top: 40px;
+    padding-left: 15px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+.list {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+ol :first-child {
+   margin-top: 40px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
