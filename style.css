@@ -1,22 +1,128 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
 :root {
-    --font-heading: 'Oswald', sans-serif;
-    --font-body: 'Titillium Web', sans-serif;
+    --font-heading: 'Oswald', Verdana, sans-serif;
+    --font-body: 'Titillium Web', Arial, sans-serif;
     --main-color: #290063;
     --secondary-color: #303030;
     --light-color: #808080;
+    --white-color: white;
+    --hover-color: #fa7f05;
+    }
+
+strong {
+    font-weight: bold;
 }
 
+.header{
+    background-color: var(--light-color);
+    margin-bottom: 20px;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+    padding: 15px 0;
+}
+
+.nav-item, .nav-item > a {
+    color: var(--white-color);
+    list-style: none;
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding-left: 15px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.nav-item:hover, .nav-item > a:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+.head-intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    padding-bottom: 5px;
+    list-style: none;
+    text-align: right;
+}
+
+.contacts {
+    display: block;
+}
 
 h1 {
     font-family: var(--font-heading);
     color: var(--main-color);
     font-size: 3rem;
-    text-align: left;
+    text-align: right;
+    display: block;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    color: var(--main-color);
+    font-size: 2rem;
+    padding-top: 30px;
+}
+
+h3 {
+    font-family: var(--font-heading);
+    color: var(--main-color);
+    font-size: 1.2rem;
+    padding: 20px 0;
 }
 
 .main-photo {
     border-radius: 50%;
     box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    width: 24%;
+    height: 24%;
+}
+
+@media (max-width: 768px) {
+    .main-photo {
+        width: 40%;
+        height: 40%;
+    }
 }
 
 blockquote {
@@ -31,21 +137,59 @@ blockquote {
 .wrapper {
     width: 60%;
     margin: 0 auto;
-    
+
+}
+
+.details-list {
+    padding-left: 20px;
+}
+
+.details-list :first-child {
+   margin-top: 10px;
 }
 
 .list {
     font-family: var(--font-body);
     font-size: 1.2rem;
     color: var(--secondary-color);
+    padding-bottom: 5px;
+    padding-left: 10px;
+    list-style: disc; 
 }
 
-ol :first-child {
-   margin-top: 40px;
+.simple-link {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.heading {
+.footer {
+    margin-top: 40px;
+    background-color: var(--main-color);
+}
+
+.footer-flex {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-icon {
+    padding-left: 15px;
+}
+
+.footer-icon :hover {
+   transform: scale(1.2);
+   transition: 0.5s;
+}
+
+.footer-text {
+    color: var(--white-color);
+    font-family: var(--font-heading);
+    font-style: 0.8rem;
+}
+
+pre {
+    font-family: "Courier New", Consolas, monospace;
 }
