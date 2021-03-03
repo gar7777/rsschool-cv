@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Titillium+Web:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <title>Garry Blinou</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-nav">
+                <div class="empty">
+
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item">Cat</li>
+                        <li class="nav-item">Social media</li>
+                    </ul>
+                </nav>
+            </div>    
+        </div>
+    </header>
+
+    <main class="wrapper">
+        <h2>I know, these are not great coding examples...</h2>
+        <h3>Count characters in your string</h3>
+        <p>
+            <pre>
+                function count (string) {  
+                    obj = {};
+                      if (string == ''){
+                        return obj;
+                      }
+                      for (i = 0; i &lt string.length; i++) {
+                        let key = string[i];
+                        if (key in obj) {
+                          obj[string[i]] = obj[string[i]] + 1;
+                        }
+                        else {
+                        obj[string[i]] = 1;
+                        }
+                      }
+                    return obj;
+                  }
+            </pre>
+        </p>
+
+        <h3>Square Every Digit</h3>
+        <p>
+            <pre>
+                function squareDigits(num){
+                    res = String(num);
+                   str = '';
+                   for (i = 0; i &lt res.length; i++){
+                     str = str + (res[i] * res[i]);
+                   }
+                   str = Number(str);
+                   return str;
+                   
+                 }
+            </pre>
+        </p>
+    
+    
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper footer-flex">
+            <div>
+                <p class="year footer-text">2021</p>
+            </div>
+            <div class="footer-icons">
+                <a class="footer-icon" href="https://rs.school" target="blanc"><img src="src/rs.svg" alt="RSschool" width="80"></a>
+                <a class="footer-icon" href="#" ><img src="src/logo_UT.svg" alt="YouTube" width="45"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

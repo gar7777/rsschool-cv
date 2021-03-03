@@ -18,7 +18,7 @@
                 </div>
                 <nav>
                     <ul class="nav">
-                        <li class="nav-item">Code</li>
+                        <li class="nav-item"><a href="code-examples.html">Code</a></li>
                         <li class="nav-item">Cat</li>
                         <li class="nav-item">Social media</li>
                     </ul>
@@ -28,21 +28,31 @@
     </header>
 
     <main class="wrapper">
-        <div class="heading">
-            <h1>CV of Garry Blinou</h1>
-            <img src="src/Blinou_main_photo.jpg" alt="Main photo" class="main-photo">
-        </div>
-            <ol>
-                <li class="list">Garry Blinou (Гавриил Блинов).</li>
-                <li class="list">E-mail: <a href="mailto:gar@tut.by" class="simple-link">gar@tut.by</a>.
-                    Tel: <a href="tel:+375296713304" class="simple-link">+375 29 671-33-04</a>.</li>
-                <li class="list">I worked more than 20 years as a DTP specialist. Now it's time to change my professional field.</li>
-                <li class="list">I have some experience in HTML and CSS and a bit in JS.</li>
-                <li class="list">I have no code examples, which I can show without tears.</li>
-                <li class="list">Only <mark>Rsschool</mark> and <mark>HTML Academy</mark> projects.</li>
-                <li class="list"><mark>Rsschool</mark>, <mark>Free Code Camp</mark> and <mark>HTML Academy</mark>.</li>
-                <li class="list">I reckon my reading and listening abilities are good. Fluency is not my cup of tea.</li>
-            </ol>
+        
+        <section class="head-intro">
+            <img class="main-photo" src="src/Blinou_main_photo.jpg" alt="Main photo">
+            <div class="intro">
+                <h1>Garry Blinou</h1>
+                <ul class="contacts">
+                    <li class="contact">E-mail: <a class="simple-link" href="mailto:gar@tut.by">gar@tut.by</a></li>
+                    <li class="contact">Tel: <a class="simple-link" href="tel:+375296713304">+375 29 671-33-04</a></li>
+                </ul>
+            </div>
+            
+        </section>
+        
+        
+        <section class="details">
+            <h2>Details</h2>
+                <ul class="details-list">
+                    <li class="list"><strong>Name:</strong> Garry Blinou (Гавриил Блинов).</li>
+                    <li class="list"><strong>Working background:</strong> I worked more than 20 years as a DTP specialist. Now it's time to change my professional field.</li>
+                    <li class="list"><strong>Experince:</strong> I have some experience in HTML and CSS and a bit in JS.</li>
+                    <li class="list"><strong>Code examples:</strong> <a href="code-examples.html">Some code</a>.</li>
+                    <li class="list"><strong>Studying: </strong><mark>Rsschool</mark>, <mark>Free Code Camp</mark> and <mark>HTML Academy</mark>.</li>
+                    <li class="list"><strong>English level:</strong> At least A2. I reckon, my reading and listening abilities are good. Fluency is not my cup of tea.</li>
+                </ul>
+        </section>
         
         <blockquote>How to eat an elephant? <br> By small bits.</blockquote>
     </main>
@@ -53,11 +63,11 @@
                 <p class="year footer-text">2021</p>
             </div>
             <div class="footer-icons">
-                <a href="https://rs.school" class="footer-icon"><img src="src/rs.svg" alt="RSschool" width="80px"></a>
-                <img src="src/logo_UT.svg" alt="YouTube" width="45px" class="footer-icon">
+                <a class="footer-icon" href="https://rs.school" target="blanc"><img src="src/rs.svg" alt="RSschool" width="80"></a>
+                <a class="footer-icon" href="#" ><img src="src/logo_UT.svg" alt="YouTube" width="45"></a>
             </div>
         </div>
     </footer>
-    
+
 </body>
 </html>
